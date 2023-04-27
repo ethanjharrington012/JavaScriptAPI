@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>F1 Racer API Table</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <form>
+    <label for="season-input">Season:</label>
+    <input type="text" id="season-input" name="season-input">
+    <label for="round-input">Round:</label>
+    <input type="text" id="round-input" name="round-input">
+    <button type="submit">Search</button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Position</th>
+        <th>Name</th>
+        <th>Nationality</th>
+        <th>Constructor</th>
+        <th>Points</th>
+        <th>Wins</th>
+        <th>Date of Birth</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+    </tbody>
+  </table>
